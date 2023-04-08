@@ -1,0 +1,21 @@
+#+title: Readme
+
+Repository for the course "Introduccion a la Computacion Cientifica y de Alto
+Rendimiento"
+
+For an online dev env, please use : XXXX
+
+* 2023-04-12 [0/1]
+- [ ] Show Resources:
+  + Web page where some examples are put: https://iluvatar.bitbucket.io/IntroSciCompHPC/
+  + Github repo for codes (add the progcpp dev machine to get a virtual env)
+  + Name the use of moodle, micampus
+- [ ] Show code computing matmul using naive multiplication, use -O0 and -O2
+- [ ] Show codes regarding matrix operations using eigen. Use it for matmul.
+- [ ] Show differences when using -O3, -fopenmp and OMP_NUM_THREADS
+
+* 2023-04-14 [0/2]
+- [ ] Compute times for matmul using several sizes , comparing direct, egien,
+  -O0, -O2, -O3
+- [ ] Do the same using -fopenmp and changing threads
+- [ ] Compute scaling
