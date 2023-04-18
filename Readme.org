@@ -7,14 +7,22 @@ For an online dev env, please use : https://github.com/iluvatar1/ProgCPP-dev/ ,
 or just click the following
 [[https://mybinder.org/v2/gh/iluvatar1/ProgCPP-dev/HEAD][https://mybinder.org/badge_logo.svg]]
 
-* 2023-04-14 Performance for matrix multiplication [0/6]
-- [ ] Show code computing matmul using naive multiplication, use -O0 and -O2
-- [ ] Show codes regarding matrix operations using eigen. Use it for matmul.
-- [ ] Show differences when using -O3, -fopenmp and OMP_NUM_THREADS
-- [ ] Compute times for matmul using several sizes , comparing direct, egien,
-  -O0, -O2, -O3
-- [ ] Do the same using -fopenmp and changing threads
+
+* 2023-04-19 Performance for Matrix Ops II [0/5]
+- [ ] Fill the matrix randomly and conrol the seed
+- [ ] Measure time : sys and cpu
+- [ ] Compute stats
+- [ ] Show differences when using -O0, -O3, and -fopenmp and OMP_NUM_THREADS
 - [ ] Compute scaling
+
+* 2023-04-14 Performance for matrix ops I [4/7]
+- [X] Show code computing matmul or some Decomposotion using naive
+  multiplication, use -O0 and -O2
+- [X] Show codes regarding matrix operations using eigen. Use it for matmul or
+  partialPiv or lu.
+- [X] Show basic time measures and discuse better ways to measure benchmarks
+- [X] Compute times using several sizes , comparing direct (if available),
+  eigen, -O0, -O2, -O3
 * 2023-04-12 Matrix multiplication [1/1]
 - [X] Show Resources:
   + Web page where some examples are put: https://iluvatar.bitbucket.io/IntroSciCompHPC/
