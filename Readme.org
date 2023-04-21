@@ -8,12 +8,14 @@ or just click the following
 [[https://mybinder.org/v2/gh/iluvatar1/ProgCPP-dev/HEAD][https://mybinder.org/badge_logo.svg]]
 
 
-* 2023-04-19 Performance for Matrix Ops II [0/5]
-- [ ] Fill the matrix randomly and conrol the seed
-- [ ] Measure time : sys and cpu
-- [ ] Compute stats
-- [ ] Show differences when using -O0, -O3, and -fopenmp and OMP_NUM_THREADS
-- [ ] Compute scaling
+* 2023-04-21 Intro Hpc
+
+* 2023-04-19 Performance for Matrix Ops II [5/5]
+- [X] Fill the matrix randomly and conrol the seed
+- [X] Measure time : sys and cpu
+- [X] Compute stats
+- [X] Show differences when using -O0, -O3, and -fopenmp and OMP_NUM_THREADS
+- [X] Compute scaling
 
 * 2023-04-14 Performance for matrix ops I [4/7]
 - [X] Show code computing matmul or some Decomposotion using naive
