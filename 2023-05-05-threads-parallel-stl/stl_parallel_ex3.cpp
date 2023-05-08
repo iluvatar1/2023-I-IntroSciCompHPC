@@ -5,6 +5,8 @@
 #include <execution>
 #include <chrono>
 
+#include <tbb/task_scheduler_init.h>
+
 template<typename Func>
 void time_function(Func func);
 
@@ -13,6 +15,8 @@ int main() {
   std::vector<double> myArray(ARRAY_SIZE);
   std::iota(myArray.begin(), myArray.end(), 0); // fill array with 0, 1, 2, ..., ARRAY_SIZE-1
 
+  tbb::task_scheduler_init init(8);
+  
   // sequential execution
   auto serial = [&myArray](){return std::accumulate(myArray.begin(), myArray.end(), 0.0);};
   time_function(serial);
