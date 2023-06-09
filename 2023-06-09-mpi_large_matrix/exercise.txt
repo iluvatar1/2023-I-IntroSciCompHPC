@@ -1,0 +1,27 @@
+#+TITLE: Ejercicio mpi+slurm
+
+En este ejercicio se busca escribir un programa que divida un dominio
+entre varios procesos y realice las comunicaciones apropiadas para
+realizar alguna operacion.
+
+Se va a modelar una matriz muy grande, que sera distribuida en bloques
+entre varios procesos. SI la matriz es de MxN (M filas y N columnas)
+entonces cada proceso tendra un bloque (M/np)xN.
+
+En este caso la matriz sera cuadrada, es decir, M=N. Esta matriz debe
+llenarse en su diagonal con los valores 1 2 3 ... N. Esto lo debe
+hacer cada procesos en paralelo en su zona especifica. Luego, cada
+proceso debe hacer la suma de la diagonal suya y enviarla al principal
+para que se imprima la suma total. Finalmente, se debe imprimir la
+matriz a un archivo, en el proceso 0, para ser luego ilustrada en
+gnuplot o matplotlib. La ejecucion se debe realizar con un script de
+slurm, usando al menos dos computadores diferentes. 
+
+Entregables:
+  - mpi_matrix.cpp : Codigo fuente. Al inicio se escriben los
+    integrantes del grupo. El programa debe leer M y N de
+    la linea de comandos, y debe verificar que M==N. 
+  - matriz.pdf: Figura de la matriz
+  - run_matrix.sh : Script de slurm para ejecutar el programa
+    compilado.
+    
